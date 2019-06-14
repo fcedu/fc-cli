@@ -1,0 +1,1 @@
+{"version":"0.0.0","commands":{"init":{"id":"init","description":"通过选择模板初始化项目。","pluginName":"fc-cli","pluginType":"core","aliases":[],"flags":{},"args":[]}}}

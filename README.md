@@ -28,29 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`fc hello [FILE]`](#fc-hello-file)
 * [`fc help [COMMAND]`](#fc-help-command)
-* [`fc init [FILE]`](#fc-init-file)
-
-## `fc hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ fc hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ fc hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/fc/fc-cli/blob/v0.0.0/src/commands/hello.ts)_
+* [`fc init`](#fc-init)
 
 ## `fc help [COMMAND]`
 
@@ -69,18 +48,13 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.0/src/commands/help.ts)_
 
-## `fc init [FILE]`
+## `fc init`
 
-describe the command here
+通过选择模板初始化项目。
 
 ```
 USAGE
-  $ fc init [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ fc init
 ```
 
 _See code: [src/commands/init.ts](https://github.com/fc/fc-cli/blob/v0.0.0/src/commands/init.ts)_
