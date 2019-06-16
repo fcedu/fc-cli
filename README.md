@@ -15,11 +15,11 @@ fc-cli
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g fc-cli
+$ npm install -g @fcedu/fc-cli
 $ fc COMMAND
 running command...
 $ fc (-v|--version|version)
-fc-cli/0.0.0 darwin-x64 node-v10.9.0
+@fcedu/fc-cli/0.0.0 darwin-x64 node-v10.9.0
 $ fc --help [COMMAND]
 USAGE
   $ fc COMMAND
