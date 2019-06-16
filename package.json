@@ -6,7 +6,7 @@
   "bin": {
     "fc": "./bin/run"
   },
-  "bugs": "https://github.com/fc/fc-cli/issues",
+  "bugs": "https://github.com/fcedu/fc-cli/issues",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -39,7 +39,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/fc/fc-cli",
+  "homepage": "https://github.com/fcedu/fc-cli",
   "keywords": [
     "oclif"
   ],
