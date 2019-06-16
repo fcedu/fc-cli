@@ -4,9 +4,8 @@ fc-cli
 丰橙学院脚手架
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/fc-cli.svg)](https://npmjs.org/package/fc-cli)
-[![Downloads/week](https://img.shields.io/npm/dw/fc-cli.svg)](https://npmjs.org/package/fc-cli)
-[![License](https://img.shields.io/npm/l/fc-cli.svg)](https://github.com/fc/fc-cli/blob/master/package.json)
+[![npm version](https://badge.fury.io/js/%40fcedu%2Ffc-cli.svg)](https://badge.fury.io/js/%40fcedu%2Ffc-cli)
+[![GitHub license](https://img.shields.io/github/license/fcedu/fc-cli.svg)](https://github.com/fcedu/fc-cli)
 
 <!-- toc -->
 * [Usage](#usage)
