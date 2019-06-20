@@ -2,17 +2,27 @@ import {Command} from '@oclif/command'
 import * as inquirer from 'inquirer'
 import * as shell from 'shelljs'
 
-/**
- * 可选项目列表
- */
-const choices: inquirer.objects.ChoiceOption<object>[] = [
+interface Repository {
+  name: string
+  repository: string
+  requireInstall: boolean
+}
+
+// 可选列表
+const repositoryList: Repository[] = [
   {
-    name: 'React 不使用 NPM、Node、JSX 的模板项目',
-    value: 'https://github.com/fcedu/react-without-node-boilerplate'
+    name: '[React] 不使用 NPM、Node、JSX 的模板项目',
+    repository: 'https://github.com/fcedu/react-without-node-boilerplate',
+    requireInstall: false
+  },
+  {
+    name: '[React] webpack 基础模板项目',
+    repository: 'https://github.com/fcedu/react-webpack-boilerplate',
+    requireInstall: true
   }
 ]
 
-// 检测 git
+// 检测 gits
 // 选择项目模板
 // 输入项目名称
 
@@ -25,7 +35,7 @@ export default class Init extends Command {
         name: 'gitRepository',
         message: '请选择一个项目模板!',
         type: 'list',
-        choices,
+        choices: repositoryList.map((item, index) => ({name: item.name, value: index})),
       }
     ])
 
@@ -62,15 +72,20 @@ export default class Init extends Command {
       this.exit(1)
     }
 
-    let gitRepository: string = await this.getGitRepository()
+    let repositoryIndex: number = await this.getGitRepository()
     let projectName: string = await this.getProjectName()
+    let repository = repositoryList[repositoryIndex]
 
-    let ok = await this.cloneBoilerpate(gitRepository, projectName)
+    let ok = await this.cloneBoilerpate(repository.repository, projectName)
 
     if (ok) {
       const path = `${process.cwd()}/${projectName}`
       shell.cd(path)
       shell.exec('git remote remove origin')
+
+      if (repository.requireInstall) {
+        shell.exec('npx yarn')
+      }
     }
 
     this.log(`创建完成，请切换到 ${ projectName } 下进行相关操作!`)
