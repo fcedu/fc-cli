@@ -18,7 +18,7 @@ $ npm install -g @fcedu/fc-cli
 $ fc-cli COMMAND
 running command...
 $ fc-cli (-v|--version|version)
-@fcedu/fc-cli/0.0.8 darwin-x64 node-v10.9.0
+@fcedu/fc-cli/0.0.12 darwin-x64 node-v10.9.0
 $ fc-cli --help [COMMAND]
 USAGE
   $ fc-cli COMMAND
@@ -56,5 +56,5 @@ USAGE
   $ fc-cli init
 ```
 
-_See code: [src/commands/init.ts](https://github.com/fcedu/fc-cli/blob/v0.0.8/src/commands/init.ts)_
+_See code: [src/commands/init.ts](https://github.com/fcedu/fc-cli/blob/v0.0.12/src/commands/init.ts)_
 <!-- commandsstop -->

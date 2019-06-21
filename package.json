@@ -1,7 +1,7 @@
 {
   "name": "@fcedu/fc-cli",
   "description": "丰橙学院脚手架",
-  "version": "0.0.8",
+  "version": "0.0.12",
   "author": "fcedu",
   "bin": {
     "fc-cli": "./bin/run"
@@ -13,7 +13,7 @@
     "@oclif/plugin-help": "^2",
     "@types/shelljs": "^0.8.5",
     "cli-ux": "^5.2.1",
-    "inquirer": "^6.3.1",
+    "inquirer": "~6.3.1",
     "shelljs": "^0.8.3",
     "tslib": "^1"
   },
